@@ -1,4 +1,6 @@
-# Restful_API_node_express
+# Simple Restful APIs
+
+## Bookstore API
 My first Restful API with Node.js and Express
 ## ESLint
 ## nodemon
