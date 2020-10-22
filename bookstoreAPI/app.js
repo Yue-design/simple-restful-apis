@@ -3,10 +3,24 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 
 const app = express();
-const db = mongoose.connect("mongodb://localhost/bookAPI", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
+
+if (process.env.ENV === "Test") {
+  console.log("This is a test");
+  const db = mongoose.connect("mongodb://localhost/bookAPI_Test", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  });
+} else {
+  console.log("This is for real.");
+  const db = mongoose.connect("mongodb://localhost/bookAPI-prod", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  });
+}
+// const db = mongoose.connect("mongodb://localhost/bookAPI", {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true
+// });
 
 // const bookRouter = express.Router();
 
@@ -35,11 +49,13 @@ app.use((error, req, res, next) => {
   res.status(error.status || 500).send({
     error: {
       status: error.status || 500,
-      message: error.message || 'Internal Server Error',
-    },
+      message: error.message || "Internal Server Error"
+    }
   });
 });
 
-app.listen(port, () => {
+app.server = app.listen(port, () => {
   console.log(`Running on port ${port}`);
 });
+
+module.exports = app;

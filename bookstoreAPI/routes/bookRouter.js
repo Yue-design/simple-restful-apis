@@ -1,35 +1,14 @@
 /* eslint-disable no-param-reassign */
 const express = require("express");
+const booksController = require("../controllers/booksController");
 
 function routes(Book) {
   const bookRouter = express.Router();
-
+  const controller = booksController(Book);
   bookRouter
     .route("/books")
-    .post((req, res) => {
-      const book = new Book(req.body);
-      // console.log(book);
-      book.save();
-      return res.status(201).json(book);
-    })
-    .get((req, res) => {
-      // const query = {genre: 'fantasy'}
-      // const query = req.query;
-      // const {query} = req;
-      const query = {};
-      if (req.query.genre) {
-        query.genre = req.query.genre;
-      }
-      // Book.find((err, books) => {
-      Book.find(query, (err, books) => {
-        // Book.findById(req.params.bookId, (err, book) => {
-        if (err) {
-          return res.send(err);
-        }
-        return res.json(books);
-      });
-      // res.json(response);
-    });
+    .post(controller.post)
+    .get(controller.get);
   bookRouter.use("/books/:bookId", (req, res, next) => {
     Book.findById(req.params.bookId, (err, book) => {
       if (err) {
@@ -74,7 +53,7 @@ function routes(Book) {
           book.genre = req.body.genre;
           book.read = req.body.read;
           // book.save();
-          req.book.save((err) => {
+          req.book.save(err => {
             if (err) {
               return res.send(err);
             }
@@ -95,21 +74,22 @@ function routes(Book) {
             const value = item[1];
             book[key] = value;
           });
-          req.book.save((err) => {
+          req.book.save(err => {
             if (err) {
               return res.send(err);
             }
             return res.json(book);
           });
-        }))
-        .delete(((res, req) => {
-          req.book.remove((err) => {
-            if(err){
-              return res.send(err);
-            }
-            return res.sendStatus(204);
-          });
-        }));
+        })
+    )
+    .delete((res, req) => {
+      req.book.remove(err => {
+        if (err) {
+          return res.send(err);
+        }
+        return res.sendStatus(204);
+      });
+    });
   return bookRouter;
 }
 module.exports = routes;
