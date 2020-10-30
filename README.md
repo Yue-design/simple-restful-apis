@@ -1,9 +1,9 @@
 # simple-restful-apis
 
-## food list - JavaScript (mock server)
+## food list api - JavaScript (mock server)
 
-## gitcard api - React(create-react-app & fetch & axios & palincss)
+## gitcard api - React(create-react-app & fetch & axios & plaincss)
 
-## bookstore api - NodeJS
+## bookstore api - NodeJS (get & pust & patch & delete)
 
-## speakers - React (next.js & error handling & tailwindcss)
+## speakers - React (error handling & tailwindcss)
