@@ -16,4 +16,4 @@
 
 <p>yarn add graphql-anywhere apollo-link-rest</p>
 
-## speakers - React (error handling & tailwindcss)
+## speakers-toolchain - React (error handling & tailwindcss)
