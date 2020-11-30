@@ -1,0 +1,15 @@
+/Users/yue/Desktop/GITworkspace/simple-restful-apis/gradebook/src/GradeBook/bin/Debug/net5.0/GradeBook.deps.json
+/Users/yue/Desktop/GITworkspace/simple-restful-apis/gradebook/src/GradeBook/bin/Debug/net5.0/GradeBook.runtimeconfig.json
+/Users/yue/Desktop/GITworkspace/simple-restful-apis/gradebook/src/GradeBook/bin/Debug/net5.0/GradeBook.runtimeconfig.dev.json
+/Users/yue/Desktop/GITworkspace/simple-restful-apis/gradebook/src/GradeBook/bin/Debug/net5.0/GradeBook.dll
+/Users/yue/Desktop/GITworkspace/simple-restful-apis/gradebook/src/GradeBook/bin/Debug/net5.0/ref/GradeBook.dll
+/Users/yue/Desktop/GITworkspace/simple-restful-apis/gradebook/src/GradeBook/bin/Debug/net5.0/GradeBook.pdb
+/Users/yue/Desktop/GITworkspace/simple-restful-apis/gradebook/src/GradeBook/obj/Debug/net5.0/GradeBook.csprojAssemblyReference.cache
+/Users/yue/Desktop/GITworkspace/simple-restful-apis/gradebook/src/GradeBook/obj/Debug/net5.0/GradeBook.GeneratedMSBuildEditorConfig.editorconfig
+/Users/yue/Desktop/GITworkspace/simple-restful-apis/gradebook/src/GradeBook/obj/Debug/net5.0/GradeBook.AssemblyInfoInputs.cache
+/Users/yue/Desktop/GITworkspace/simple-restful-apis/gradebook/src/GradeBook/obj/Debug/net5.0/GradeBook.AssemblyInfo.cs
+/Users/yue/Desktop/GITworkspace/simple-restful-apis/gradebook/src/GradeBook/obj/Debug/net5.0/GradeBook.csproj.CoreCompileInputs.cache
+/Users/yue/Desktop/GITworkspace/simple-restful-apis/gradebook/src/GradeBook/obj/Debug/net5.0/GradeBook.dll
+/Users/yue/Desktop/GITworkspace/simple-restful-apis/gradebook/src/GradeBook/obj/Debug/net5.0/ref/GradeBook.dll
+/Users/yue/Desktop/GITworkspace/simple-restful-apis/gradebook/src/GradeBook/obj/Debug/net5.0/GradeBook.pdb
+/Users/yue/Desktop/GITworkspace/simple-restful-apis/gradebook/src/GradeBook/obj/Debug/net5.0/GradeBook.genruntimeconfig.cache
