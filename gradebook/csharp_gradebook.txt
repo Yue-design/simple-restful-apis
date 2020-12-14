@@ -1,0 +1,8 @@
+1. dotnet new console
+2. dotnet run
+3. code .
+4. dotnet restore
+5. dotnet build
+6. dotnet run -- arg
+7. cmd+k+c vs cmd+k+u
+8. dotnet add reference 
